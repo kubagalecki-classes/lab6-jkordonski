@@ -13,7 +13,7 @@ std::vector< char > foo(std::list< Human >& people)
 
     for_each(people.rbegin(), people.rend(), [&](Human& h){h.birthday();});
 
-    trensform(people.begin(), people.end(), ret_v.rbegin(), [&](Human& h)
+    transform(people.begin(), people.end(), ret_v.rbegin(), [&](Human& h)
      {
      if (h.isMonster()==true){return 'n';}
      else{return 'y';}
